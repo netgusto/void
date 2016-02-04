@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "serve:dev": "node ./scripts/servedev.js",
+    "build": "node ./scripts/build.js"
+  }
+}
