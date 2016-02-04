@@ -1,4 +1,5 @@
 module.exports = {
+  node: { fs: "empty" },
   entry: {
     app: [__dirname + '/src/index.js']
   },
@@ -18,6 +19,12 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
+    }, {
+      test: /\.json$/,
+      loader: 'json'
     }]
+  },
+  externals: {
+    'phaser': 'Phaser'
   }
 };

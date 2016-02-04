@@ -13,11 +13,17 @@
     "eslint": "^1.10.3",
     "eslint-loader": "^1.2.1",
     "eslint-plugin-react": "^3.16.1",
+    "json-loader": "^0.5.4",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "serve:dev": "node ./scripts/servedev.js",
     "build": "node ./scripts/build.js"
+  },
+  "dependencies": {
+    "p2": "^0.7.1",
+    "phaser": "^2.4.4",
+    "pixi.js": "^3.0.9"
   }
 }

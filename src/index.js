@@ -1,5 +1,5 @@
 'use strict';
 
-const f = (msg) => console.log(msg);
+import Game from './Game';
 
-f('Hello, World from ES6 !');
+new Game({ nbmummies: 20 });
