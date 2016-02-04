@@ -2,6 +2,8 @@ var webpack = require('webpack');
 var webpackconfig = require('../webpack.config');
 var chalk = require('chalk');
 
+webpackconfig.bail = true;  // throw on error !
+
 [
   new webpack.ProgressPlugin(function(percentage, msg) {
     console.log(chalk.yellow((percentage * 100) + '%') + ' ' + chalk.cyan(msg));

@@ -1,3 +1,5 @@
 'use strict';
 
-console.log('Hello, World !');
+const f = (msg) => console.log(msg);
+
+f('Hello, World from ES6 !');
