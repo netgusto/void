@@ -1,4 +1,5 @@
 module.exports = {
+  node: { fs: "empty" },
   entry: {
     app: [__dirname + '/src/index.js']
   },
@@ -14,10 +15,17 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'eslint-loader'
     }],
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }]
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.json$/,
+        exclude: /node_modules/,
+        loader: 'json-loader'
+      },
+    ]
   }
 };
