@@ -11,6 +11,7 @@ $ npm install
 
 ```bash
 $ npm run serve:dev
+// Navigate to http://localhost:8080; says "Hello, World" in the console !
 ```
 
 ## build
