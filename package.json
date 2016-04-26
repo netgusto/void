@@ -19,6 +19,7 @@
   },
   "scripts": {
     "serve:dev": "node ./scripts/servedev.js",
+    "watch:dev": "node ./scripts/watchdev.js",
     "build": "node ./scripts/build.js"
   }
 }
